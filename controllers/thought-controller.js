@@ -49,4 +49,4 @@ const thoughtController = {
     }
 }
 
-module.exports = thoughtCOntroller 
+module.exports = thoughtController 
