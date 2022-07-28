@@ -30,7 +30,7 @@ const userController = {
         .catch(err => res.status(400).json(err))
     },
     deleteUser({ params }, res) {
-        User.findONeAndDelete({ _id: params.id })
+        User.findOneAndDelete({ _id: params.id })
         .then(dbUserData => {
             if (!dbUserData) {
                 return res.status(404).json({ message: user404Message(params.id) })
